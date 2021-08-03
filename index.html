@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContadorApp</title>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <hr>
+        <h3 class="count">{{ count }}</h3>
+        <hr>
+        <div class="buttons">
+            <button v-on:click="modCount('dis')">-1</button>
+            <button @click="modCount">+1</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mount.js"></script>
+</body>
+</html>
